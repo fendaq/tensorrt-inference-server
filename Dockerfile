@@ -217,6 +217,7 @@ RUN (cd /opt/tensorflow && ./nvbuild.sh --python$PYVER --configonly) && \
     cp bazel-bin/src/clients/c++/librequest.a /opt/tensorrtserver/lib/. && \
     mkdir -p /opt/tensorrtserver/custom && \
     cp bazel-bin/src/custom/addsub/libaddsub.so /opt/tensorrtserver/custom/. && \
+    cp bazel-bin/src/custom/sequence/libsequence.so /opt/tensorrtserver/custom/. && \
     mkdir -p /opt/tensorrtserver/pip && \
     bazel-bin/src/clients/python/build_pip /opt/tensorrtserver/pip/. && \
     bash -c 'if [ "$BUILD_CLIENTS_ONLY" != "1" ]; then \

@@ -101,7 +101,7 @@ class Context {
   // execute on CPU.
   const int gpu_device_;
 
-  // The size, in bytes, or batch-size 1 input or output tensor. Input
+  // The size, in bytes, of batch-size 1 input or output tensor. Input
   // and output tensors are the same shape and data-type so they all
   // have the same size. To get the full size of an input/output need
   // to multiply this value by the batch-size.
